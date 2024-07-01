@@ -11,7 +11,7 @@ interface ICreateX {
     function deployCreate2(bytes32 salt, bytes memory initCode) external payable returns (address newContract);
 }
 
-bytes32 constant SALT = keccak256(unicode"🧊");
+bytes32 constant SALT = 0x671d94f5c71d4234178a8fd82c9b53f7d770ade6d0d520293c23cea1588ac5b4;
 
 contract DeploySignedTransfer is Script {
     ICreateX constant createX = ICreateX(CREATEX_ADDRESS);
